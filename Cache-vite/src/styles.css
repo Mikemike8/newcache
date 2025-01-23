@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode */
+.dark body {
+  background-color: #111827; /* Dark background for dark mode */
+}
+
+.dark .text-gray-300 {
+  color: white; /* Light text color for dark mode */
+}
+
+.dark .bg-gray-100 {
+  background-color: #2d3748; /* Darker background for sections */
+}
+
+/* Base styles for the entire document */
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  font-size: 1rem; /* Base font size */
+  background-color: white; /* Light background color */
+}
+
+/* Responsive font sizes for different screen sizes */
+@media (max-width: 1200px) {
+  body {
+    font-size: 0.9375rem; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 0.875rem; /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.8125rem; /* Even smaller font size for mobile screens */
+  }
+}
+
+/* Apply overflow-x to specific elements */
+.container {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  padding: 1rem; /* Base padding */
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0.75rem; /* Adjust padding for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0.5rem; /* Adjust padding for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0.25rem; /* Adjust padding for mobile screens */
+  }
+}
+
+/* Example for a responsive navbar */
+nav {
+  padding: 1rem; /* Base padding */
+  font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 1200px) {
+  nav {
+    font-size: 0.9rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    font-size: 0.8rem; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    font-size: 0.7rem; /* Adjust font size for mobile screens */
+  }
+}
+
+/* Example for responsive images */
+img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive image sizes */
+@media (max-width: 1200px) {
+  .w-12 {
+    width: 10rem; /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .w-12 {
+    width: 8rem; /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .w-12 {
+    width: 6rem; /* Adjust width for mobile screens */
+  }
+}
+
+/* Remove rounded corners */
+button {
+  border-radius: 0; /* Ensure buttons have square corners */
+}
+
+/* Carousels or sliders */
+.logos-slide {
+  white-space: nowrap;
+}
+
+.logos-slide img {
+  height: 50px;
+}
