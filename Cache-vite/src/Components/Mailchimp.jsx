@@ -65,7 +65,7 @@ const MailchimpForm = () => {
           <div id="mc_embed_signup_scroll">
             <h2>Subscribe to our Newsletter!</h2>
             <div className="indicates-required">
-              <span className="asterisk"></span> indicates required
+              <span className="asterisk"></span> 
             </div>
             <div className="mc-field-group">
               <label htmlFor="mce-EMAIL">
