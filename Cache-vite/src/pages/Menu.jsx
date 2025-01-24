@@ -41,7 +41,7 @@ export default function Menu() {
           </h3>
           <h3 className="font-light text-md">
             <a
-              href="https://drive.google.com/file/d/1lWLrv0vuIAitLw8YtLy6E9MkmeFQMSjQ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1CLu090kZWg2K-cppivYBKbVhvxG9Q0QT/view?usp=sharing"
               className="text-black"
               target="_blank"
               rel="noopener noreferrer"
