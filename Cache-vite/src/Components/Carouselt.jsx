@@ -27,34 +27,52 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto overflow-hidden mb-12 rounded-2xl shadow-xl">
+    <div className="relative w-full max-w-7xl mx-auto overflow-hidden mb-12">
       {/* Carousel Container */}
-      <div className="flex transition-transform duration-500 ease-in-out" 
+      <div className="flex transition-transform duration-500 ease-in-out rounded-2xl shadow-xl"
            style={{ transform: `translateX(-${activeSlide * 100}%)` }}>
         {carouselItems.map((item, index) => (
           <div 
             key={index} 
             className="w-full flex-shrink-0 relative group"
-            style={{ paddingTop: '50%' }} // 2:1 aspect ratio
+            style={{ 
+              height: '70vh',
+              minWidth: '100%'
+            }}
           >
             <img
               src={item.image}
               alt={item.alt}
-              className="absolute top-0 left-0 w-full h-full object-cover object-center transform transition-transform duration-300 group-hover:scale-105"
+              className="absolute top-0 left-0 w-full h-full object-cover object-center transform transition-transform duration-300 group-hover:scale-105 rounded-2xl"
               loading="lazy"
-              style={{ 
-                backgroundColor: '#f3f4f6',
-                maxHeight: '70vh',
-                objectPosition: 'center 30%' // Adjust focus area
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center center'
               }}
             />
-            {/* Image overlay for better text contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+            
+            {/* Integrated Indicators */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+              {carouselItems.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActiveSlide(idx)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    idx === activeSlide 
+                      ? 'bg-amber-500 scale-125' 
+                      : 'bg-white/70 hover:bg-white/90'
+                  }`}
+                  aria-label={`Navigate to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
           </div>
         ))}
       </div>
 
-      {/* Navigation Arrows - Improved Visibility */}
+      {/* Navigation Arrows */}
       <button
         onClick={goToPrev}
         className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/30 p-2 rounded-full hover:bg-black/50 transition-colors backdrop-blur-sm"
@@ -67,25 +85,6 @@ const Carousel = () => {
       >
         <FiChevronRight className="w-6 h-6 text-white" />
       </button>
-
-      {/* Enhanced Indicators */}
-      <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-        {carouselItems.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setActiveSlide(index)}
-            className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full flex items-center justify-center ${
-              index === activeSlide 
-                ? 'bg-white scale-125' 
-                : 'bg-white/50 hover:bg-white/70'
-            } transition-all duration-300`}
-          >
-            {index === activeSlide && (
-              <span className="w-2 h-2 sm:w-3 sm:h-3 bg-black rounded-full" />
-            )}
-          </button>
-        ))}
-      </div>
     </div>
   );
 };

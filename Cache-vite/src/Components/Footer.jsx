@@ -46,7 +46,7 @@ export default function OnlyFoot() {
             901-632-1428
           </p>
           <p className="text-gray-900 dark:text-gray-300 text-sm font-inconsolata">
-            Cache42Mem@gmail.com
+            Cache42downtown@gmail.com
           </p>
         </div>
         <div className="md:col-span-1  flex flex-col items-center gap-4 text-center">
