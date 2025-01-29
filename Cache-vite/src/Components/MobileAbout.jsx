@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import money from "../assets/himoney.jpg";
+import kill from "../assets/roomcash.png";
 
 function MobiAbout() {
   useEffect(() => {
@@ -23,7 +23,7 @@ function MobiAbout() {
   <div className="flex flex-col justify-center max-w-screen-xl mx-auto px-4 pb-16 pt-28 lg:pt-32 lg:px-0">
     <div className="relative w-full mb-10 lg:hidden fade-in">
       <img
-        src={money}
+        src={kill}
         className="object-cover object-center w-full h-64 rounded-lg shadow-xl"
         alt="Upscale dining experience"
       />
@@ -52,16 +52,16 @@ function MobiAbout() {
     </div>
     <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6 justify-center">
       <a
-        href="https://www.opentable.com/restref/client/?rid=1279489&restref=1279489&partysize=2&datetime=2024-09-05T19%3A00&lang=en-US&r3uid=Md80nnnPF&ot_source=Restaurant%20website&color=1&corrid=ef28e07b-8f0c-47f3-a126-d91d3c7a78dc"
+        href="https://www.opentable.com/r/cache-42-downtown-express-memphis"
         className="inline-flex bg-red-700 items-center justify-center h-12 px-6 font-medium tracking-wide hover:bg-black text-white transition duration-200 rounded-full shadow-lg transform hover:scale-105"
       >
         Book A Table
       </a>
       <a
-        href="/menu"
+        href="https://order.spoton.com/svy-cache-42-downtown-21327/memphis-tn/6716cc9b8a1487d11dc6f2b2/dinein?tableId="
         className="inline-flex text-black font-bold hover:text-red-700 border-b-2 border-black hover:border-red-700 transition-colors duration-200"
       >
-        View Menu
+        Order Now
       </a>
     </div>
   </div>

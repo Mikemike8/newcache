@@ -19,5 +19,17 @@ npm install
 ```
 npx vite
 ```
+<!-- Switch to the main branch -->
+git checkout main
+
+<!-- Pull the latest changes from the remote main branch -->
+git pull origin main
+
+<!-- Merge your branch into the main branch -->
+git merge  branch-name
+
+<!-- Push the merged changes to the remote main branch -->
+git push origin main
+
 
 For hosting on render please refer to the build settings on the previous deployment.

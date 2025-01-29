@@ -16,7 +16,7 @@ export default function OnlyFoot() {
           <a href="https://www.facebook.com/Cache42memphis/" aria-label="Facebook">
             <FaFacebook className="text-2xl text-black hover:text-primary transition-colors duration-300" />
           </a>
-          <a href="https://www.instagram.com/cache42memphis/" aria-label="Instagram">
+          <a href="https://www.instagram.com/p/DE2X9q3zHAp/?igsh=MzJ4cDhhMWIxbTNt" aria-label="Instagram">
             <FaInstagram className="text-2xl text-black hover:text-primary transition-colors duration-300" />
           </a>
         </div>

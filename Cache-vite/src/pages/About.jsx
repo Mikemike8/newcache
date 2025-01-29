@@ -21,7 +21,7 @@ export default function About() {
               alt="Logo"
             />
           </a>
-          <nav className="font-inconsolata font-semibold text-base">
+          <nav className="font-inconsolata font-semibold sm:text-lg md:text-md lg:text-xl xl:text-xl text-base">
             <ul className="flex items-center space-x-2">
               <li className="p-2">
                 <a href="/home" className="hover:text-gray-400 text-white">
