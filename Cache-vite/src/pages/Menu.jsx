@@ -1,4 +1,5 @@
 import Carousel from "../Components/Carousel";
+import Carouselt from "../Components/Carouselt";
 import Footer from"../Components/Footer";
 export default function Menu() {
   return (
@@ -12,7 +13,7 @@ export default function Menu() {
               alt="Logo"
             />
           </a>
-          <nav className="font-inconsolata sm:text-lg md:text-md lg:text-xl xl:text-xl font-semibold text-base">
+          <nav className="font-inconsolata sm:text-xl md:text-md lg:text-xl xl:text-xl font-semibold text-base">
             <ul className="flex items-center space-x-2">
               <li className="p-2">
                 <a href="/home" className="hover:text-gray-400 text-white font-inconsolata">
@@ -48,6 +49,7 @@ export default function Menu() {
               DOWNLOAD MENU
             </a>
           </h3>
+          <Carouselt/>
         </div>
 
         {/* Brunch Section */}
