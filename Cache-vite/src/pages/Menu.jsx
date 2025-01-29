@@ -297,14 +297,7 @@ export default function Menu() {
                 Premium Ribeye steak, with rich marbling & bold, juicy flavor.
               </p>
             </div>
-            <div className="mb-4">
-              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
-                HOT LEMON PEPPER PORK CHOPS - $35
-              </h3>
-              <p className="text-sm text-gray-600 font-inconsolata">
-                Served over sweet potato mash.
-              </p>
-            </div>
+           
             <div className="mb-4">
               <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
                 SURF & TURF - $68
@@ -330,20 +323,52 @@ export default function Menu() {
               </p>
             </div>
             <div className="mb-4">
-              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
-                CACHE FLIGHT LAMB CHOPS - $35
-              </h3>
-              <p className="text-sm text-gray-600 font-inconsolata">
-                Grilled lamb chops served over pasta.
-              </p>
-            </div>
-            <div className="mb-4">
-              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
-                GRILLED SALMON OVER WILD RICE - $30
-              </h3>
-              <p className="text-sm text-gray-600 font-inconsolata">
-                Served with a bourbon glaze drizzle.
-              </p>
+           <h3 className="text-lg md:text-xl text-center font-semibold font-inconsolata">
+  CACHE FLIGHT - $35
+</h3>
+
+              <div className="mb-4">
+</div>
+
+{/* Wrapping remaining items in a horizontal row */}
+<div className="flex flex-col md:flex-row items-start justify-center gap-4 text-center">
+  {/* First horizontally aligned item */}
+  <div>
+    <h4 className="text-lg md:text-md font-semibold font-inconsolata">
+    Lamb Chop</h4>
+    <p className="text-sm text-gray-600 font-inconsolata">
+    Grilled lamb chops served over pasta.
+    </p>
+  </div>
+
+  {/* Separator */}
+  <span className="text-gray-500 hidden md:block">|</span>
+  
+  
+  {/* First horizontally aligned item */}
+  <div>
+    <h4 className="text-lg md:text-md font-semibold font-inconsolata">
+      HOT LEMON PEPPER PORK CHOPS 
+    </h4>
+    <p className="text-sm text-gray-600 font-inconsolata">
+      Served over sweet potato mash.
+    </p>
+  </div>
+
+  {/* Separator */}
+  <span className="text-gray-500 hidden md:block">|</span>
+
+  {/* third horizontally aligned item */}
+  <div>
+    <h4 className="text-lg md:text-md font-semibold font-inconsolata">
+      GRILLED SALMON OVER WILD RICE 
+    </h4>
+    <p className="text-sm text-gray-600 font-inconsolata">
+      Served with a bourbon glaze drizzle.
+    </p>
+  </div>
+</div>
+
             </div>
           </div>
 
