@@ -49,8 +49,9 @@ export default function Menu() {
             </a>
           </h3>
         </div>
+
+        {/* Brunch Section */}
         <div className="flex flex-col lg:flex-row justify-center py-10">
-          {/* Small Plates */}
           <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               BRUNCH
@@ -98,7 +99,7 @@ export default function Menu() {
             </div>
           </div>
 
-          {/* Lunch */}
+          {/* Lunch Section */}
           <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               LUNCH
@@ -149,8 +150,8 @@ export default function Menu() {
           </div>
         </div>
 
+        {/* Small Plates Section */}
         <div className="flex flex-col lg:flex-row justify-center py-10">
-          {/* SMALL PLATES */}
           <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               SMALL PLATES
@@ -229,7 +230,7 @@ export default function Menu() {
             </div>
           </div>
 
-          {/* Salads */}
+          {/* Salads Section */}
           <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               Salads
@@ -257,6 +258,129 @@ export default function Menu() {
                 Add GRILLED SALMON +$8 <br />
                 Add SAUTEED SHRIMP +$10
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Plates Section */}
+        <div className="flex flex-col lg:flex-row justify-center py-10">
+          <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
+              MAIN PLATES
+            </h2>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                KING SALMON & SHRIMP - $42
+              </h3>
+              <p className="text-sm text-gray-600 font-inconsolata">
+                Bourbon glazed, pan-seared 8oz salmon filet with succulent sautéed jumbo shrimp - a perfect premium duo.
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                KING SALMON ONLY - $30
+              </h3>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                OXTAILS - $38
+              </h3>
+              <p className="text-sm text-gray-600 font-inconsolata">
+                Slow-braised, tender oxtails served over spiced Jamaican Rice.
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                RIBEYE - $42
+              </h3>
+              <p className="text-sm text-gray-600 font-inconsolata">
+                Premium Ribeye steak, with rich marbling & bold, juicy flavor.
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                HOT LEMON PEPPER PORK CHOPS - $35
+              </h3>
+              <p className="text-sm text-gray-600 font-inconsolata">
+                Served over sweet potato mash.
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                SURF & TURF - $68
+              </h3>
+              <p className="text-sm text-gray-600 font-inconsolata">
+                Juicy Ribeye steak paired with your choice of lobster or shrimp & a side.
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                CACHE CAJUN PASTA - $22
+              </h3>
+              <p className="text-sm text-gray-600 font-inconsolata">
+                Penne Pasta with bell peppers, house Alfredo sauce, & your choice of protein: Chicken, Shrimp, Steak, Lamb, Lobster, Oxtail.
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                TURKEY RIBS - $32
+              </h3>
+              <p className="text-sm text-gray-600 font-inconsolata">
+                Succulent ribs served with a side of garlic mashed potatoes.
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                CACHE FLIGHT LAMB CHOPS - $35
+              </h3>
+              <p className="text-sm text-gray-600 font-inconsolata">
+                Grilled lamb chops served over pasta.
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                GRILLED SALMON OVER WILD RICE - $30
+              </h3>
+              <p className="text-sm text-gray-600 font-inconsolata">
+                Served with a bourbon glaze drizzle.
+              </p>
+            </div>
+          </div>
+
+          {/* Sides Section */}
+          <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
+              SIDES
+            </h2>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                FRENCH FRIES - $7
+              </h3>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                MASHED POTATOES - $14
+              </h3>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                MAC & CHEESE - $12
+              </h3>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+              BRUSSEL SPROUTS - $12
+              </h3>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                LOBSTER MAC & CHEESE - $23
+              </h3>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
+                SAUTEED ASPARAGUS - $13
+              </h3>
             </div>
           </div>
         </div>
