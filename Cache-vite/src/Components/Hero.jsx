@@ -1,22 +1,10 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
+import desktopCache from "../assets/cache.webp";
+import mobileCache from "../assets/mobileCacheWeb.webp";
 import cacheLogo from "../assets/cache42logo.webp";
 import "aos/dist/aos.css";
 import "../styles.css";
-
-// Import all image sizes
-const images = {
-  xs: "../assets/hero-xs.webp",
-  xs2x: "../assets/hero-xs@2x.webp",
-  sm: "../assets/hero-sm.webp",
-  sm2x: "../assets/hero-sm@2x.webp",
-  md: "../assets/hero-md.webp",
-  md2x: "../assets/hero-md@2x.webp",
-  lg: "../assets/hero-lg.webp",
-  lg2x: "../assets/hero-lg@2x.webp",
-  xl: "../assets/hero-xl.webp",
-  xl2x: "../assets/hero-xl@2x.webp",
-};
 
 const debounce = (func, wait) => {
   let timeout;
@@ -28,18 +16,12 @@ const debounce = (func, wait) => {
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
-  const [currentBreakpoint, setCurrentBreakpoint] = useState("xl");
+  const [backgroundImage, setBackgroundImage] = useState(desktopCache);
 
   useEffect(() => {
     const handleResize = () => {
-      const width = window.innerWidth;
-      if (width < 640) setCurrentBreakpoint("xs");
-      else if (width < 768) setCurrentBreakpoint("sm");
-      else if (width < 1024) setCurrentBreakpoint("md");
-      else if (width < 1280) setCurrentBreakpoint("lg");
-      else setCurrentBreakpoint("xl");
+      setBackgroundImage(window.innerWidth < 768 ? mobileCache : desktopCache);
     };
-    
     handleResize();
     window.addEventListener("resize", debounce(handleResize, 100));
     return () => window.removeEventListener("resize", handleResize);
@@ -56,73 +38,17 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-screen w-full flex flex-col justify-center items-center overflow-hidden">
-      {/* Preload critical images */}
-      <link
-        rel="preload"
-        href={images.xs}
-        as="image"
-        media="(max-width: 639px)"
-      />
-      <link
-        rel="preload"
-        href={images.sm}
-        as="image"
-        media="(min-width: 640px) and (max-width: 767px)"
-      />
-      <link
-        rel="preload"
-        href={images.md}
-        as="image"
-        media="(min-width: 768px) and (max-width: 1023px)"
-      />
-      <link
-        rel="preload"
-        href={images.lg}
-        as="image"
-        media="(min-width: 1024px) and (max-width: 1279px)"
-      />
-      <link
-        rel="preload"
-        href={images.xl}
-        as="image"
-        media="(min-width: 1280px)"
-      />
-
-      {/* Responsive Background Image */}
-      <div className="absolute inset-0 z-0">
-        <picture className="w-full h-full">
-          <source
-            media="(min-width: 1280px)"
-            srcSet={`${images.xl} 1x, ${images.xl2x} 2x`}
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1024px)"
-            srcSet={`${images.lg} 1x, ${images.lg2x} 2x`}
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcSet={`${images.md} 1x, ${images.md2x} 2x`}
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 640px)"
-            srcSet={`${images.sm} 1x, ${images.sm2x} 2x`}
-            type="image/webp"
-          />
-          <img
-            src={images.xs}
-            srcSet={`${images.xs2x} 2x`}
-            alt="Restaurant ambiance"
-            className="w-full h-full object-cover"
-            loading="eager"
-            decoding="async"
-          />
-        </picture>
-      </div>
-
+    <div
+      className="relative bg-cover bg-center h-screen w-full flex flex-col justify-center items-center overflow-hidden"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <link rel="preload" href={backgroundImage} as="image" />
+      
       {/* Navigation Section */}
       <div className="absolute inset-0 flex flex-col items-center p-4 z-10">
         <section
