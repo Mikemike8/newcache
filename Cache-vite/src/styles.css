@@ -15,8 +15,9 @@
   background-color: #2d3748; /* Darker background for sections */
 }
 
+
 /* Base styles for the entire document */
-body {
+body,html {
   overflow-x: hidden; /* Prevent horizontal overflow */
   font-size: 1rem; /* Base font size */
   background-color: white; /* Light background color */
