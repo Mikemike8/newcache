@@ -30,7 +30,7 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Cache42 Hero"
-          className="rounded-lg bg-blue-600 w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] object-cover"
+          className="rounded-lg  w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] object-cover"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col sm:flex-row gap-4 sm:gap-5 z-20">
           <a href="https://www.opentable.com/r/cache-42-downtown-express-memphis">
