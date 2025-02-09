@@ -9,8 +9,8 @@ const Hero = () => {
   return (
     <div className="bg-wheat min-h-screen overflow-x-hidden"> {/* Added overflow-x-hidden here */}
       {/* Navigation Bar */}
-      <nav className="font-inconsolata font-semibold w-full h-[65px] relative flex justify-center p-0 m-0">
-        <ul className="flex flex-wrap bg-[#7B1F1F] w-full h-[65px] justify-end items-center list-none gap-4 px-4">
+      <nav className="font-inconsolata font-semibold w-full h-[80px] relative flex justify-center p-0 m-0">
+        <ul className="flex flex-wrap bg-[#7B1F1F] w-full h-[80px] justify-end items-center list-none gap-4 px-4">
           <a href="/" className="absolute left-4">
             <img
               className="h-[50px] w-[50px] sm:h-[65px] sm:w-[65px]"
