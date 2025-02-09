@@ -34,8 +34,15 @@ const MailchimpForm = () => {
           #mc_embed_signup h2 {
             color: #333; /* Adjust header color */
           }
+           #mce-EMAIL {
+  background: #F5F5DC; /* Soft beige */
+  border: 2px solid #DC2626; /* Red border */
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.7); /* Red glow */
+}
+
+
           #mc_embed_signup input {
-            background: #fff; /* Form Background */
+            background: #F5F5DC ; /* Form Background */
             color: #000000;
             border: 1px solid #DC2626; /* Add border to input fields */
             padding: 10px; /* Add padding for better appearance */
