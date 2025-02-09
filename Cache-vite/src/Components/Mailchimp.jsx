@@ -22,9 +22,9 @@ const MailchimpForm = () => {
         type="text/css"
       />
       <style type="text/css">
-        {`
+        {`  
           #mc_embed_signup {
-            background: #fff; /* Form Background */
+            background: #F5F5DC; /* Form Background */
             clear: left;
             font: 14px inconsolata;
             width: 100%; /* Adjusted width to fit container */

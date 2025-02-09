@@ -5,7 +5,7 @@ import roomcash from '../assets/roomcash.png';
 
 export default function OnlyFoot() {
   return (
-    <div className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200 p-4">
+    <div className="bg-[#F5F5DC] dark:bg-gray-800 text-gray-900 dark:text-gray-200 p-4">
     <div className="flex flex-col items-center md:grid md:grid-cols-3 gap-8">
       <div className="md:col-span-1 w-full flex flex-col items-center justify-center">
         {/* Mailchimp Form */}

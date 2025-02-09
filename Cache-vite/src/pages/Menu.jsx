@@ -34,7 +34,7 @@ export default function Menu() {
           </nav>
         </div>
       </header>
-      <div className="bg-white font- text-gray-800 pt-24">
+      <div className="bg-[#F5F5DC] font- text-gray-800 pt-24">
         <div className="text-center">
           <h3 className="font-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
             MENU
@@ -53,8 +53,8 @@ export default function Menu() {
         </div>
 
         {/* Brunch Section */}
-        <div className="flex flex-col lg:flex-row justify-center py-10">
-          <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8">
+        <div className=" bg-[#F5F5DC] flex flex-col lg:flex-row justify-center py-10">
+          <div className="w-full lg:w-1/2 bg-[#F5F5DC] rounded-lg p-4 md:p-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               BRUNCH
             </h2>
@@ -102,7 +102,7 @@ export default function Menu() {
           </div>
 
           {/* Lunch Section */}
-          <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
+          <div className=" bg-[#F5F5DC] w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               LUNCH
             </h2>
@@ -153,8 +153,8 @@ export default function Menu() {
         </div>
 
         {/* Small Plates Section */}
-        <div className="flex flex-col lg:flex-row justify-center py-10">
-          <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8">
+        <div className=" bg-[#F5F5DC] flex flex-col lg:flex-row justify-center py-10">
+          <div className="w-full lg:w-1/2 bg-[#F5F5DC] rounded-lg p-4 md:p-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               SMALL PLATES
             </h2>
@@ -233,7 +233,7 @@ export default function Menu() {
           </div>
 
           {/* Salads Section */}
-          <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
+          <div className="  bg-[#F5F5DC] w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               Salads
             </h2>
@@ -265,8 +265,8 @@ export default function Menu() {
         </div>
 
         {/* Main Plates Section */}
-        <div className="flex flex-col lg:flex-row justify-center py-10">
-          <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8">
+        <div className="flex  bg-[#F5F5DC] flex-col lg:flex-row justify-center py-10">
+          <div className="w-full lg:w-1/2 bg-[#F5F5DC] rounded-lg p-4 md:p-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               MAIN PLATES
             </h2>
@@ -375,7 +375,7 @@ export default function Menu() {
           </div>
 
           {/* Sides Section */}
-          <div className="w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
+          <div className="w-full lg:w-1/2 bg-[#F5F5DC] rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               SIDES
             </h2>
