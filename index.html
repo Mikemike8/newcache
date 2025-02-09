@@ -4,15 +4,13 @@ import steak from "/src/assets/steak.png";
 import roomsmoke from "/src/assets/roomsmoke.png";
 import roomcash from "/src/assets/roomcash.png";
 import heroImage from "/src/assets/cache.webp"; // Ensure this exists in the assets folder
-import "/src/assets/overflow.css";
-
 
 const Hero = () => {
   return (
     <div className="bg-wheat min-h-screen">
       {/* Navigation Bar */}
-      <nav className=" font-inconsolata font-semibold w-full h-[65px] relative flex justify-center p-0 m-0">
-        <ul className="flex flex-wrap bg-[#7B1F1F] w-full h-[65px] justify-end items-center list-none gap-4 px-4">
+      <nav className="bg-blue-600 w-full h-[65px] relative flex justify-center p-0 m-0">
+        <ul className="flex flex-wrap bg-[#7B1F1F] w-full h-[65px] justify-center items-center list-none gap-4 px-4">
           <a href="/" className="absolute left-4">
             <img
               className="h-[50px] w-[50px] sm:h-[65px] sm:w-[65px]"
@@ -20,9 +18,9 @@ const Hero = () => {
               alt="Logo"
             />
           </a>
-          <a href="/home" className=" hover:text-gray-400  text-white text-sm sm:text-lg">HOME</a>
-          <a href="/about" className=" hover:text-gray-400 text-white text-sm sm:text-lg">ABOUT</a>
-          <a href="/menu" className=" hover:text-gray-400 text-white text-sm sm:text-lg">MENU</a>
+          <a href="/home" className="text-white text-sm sm:text-lg">HOME</a>
+          <a href="/about" className="text-white text-sm sm:text-lg">ABOUT</a>
+          <a href="/menu" className="text-white text-sm sm:text-lg">MENU</a>
         </ul>
       </nav>
 
@@ -36,13 +34,13 @@ const Hero = () => {
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col sm:flex-row gap-4 sm:gap-5 z-20">
             <a href="https://www.opentable.com/r/cache-42-downtown-express-memphis">
-                <button className=" font-inconsolata font-semibold  bg-[#7B1F1F] text-white px-6 py-2 rounded-lg shadow-md hover:bg-[#a35a0d] transition">
-                  BOOK TABLE
+                <button className="bg-[#D37B14] text-white px-6 py-2 rounded-lg shadow-md hover:bg-[#a35a0d] transition">
+                  Book Now
                 </button>
               </a> 
               <a href="https://order.spoton.com/svy-cache-42-downtown-21327/memphis-tn/6716cc9b8a1487d11dc6f2b2/dinein?tableId=">
-                <button className=" font-inconsolata font-semibold  bg-[#7B1F1F] text-white px-6 py-2 rounded-lg shadow-md hover:bg-[#a35a0d] transition">
-                  ORDER NOW
+                <button className="bg-[#D37B14] text-white px-6 py-2 rounded-lg shadow-md hover:bg-[#a35a0d] transition">
+                  ORDER
                 </button>
               </a>
         </div>
