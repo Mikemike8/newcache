@@ -4,14 +4,12 @@ import steak from "/src/assets/steak.png";
 import roomsmoke from "/src/assets/roomsmoke.png";
 import roomcash from "/src/assets/roomcash.png";
 import heroImage from "/src/assets/cache.webp"; // Ensure this exists in the assets folder
-import "/src/assets/overflow.css";
-
 
 const Hero = () => {
   return (
-    <div className="bg-wheat min-h-screen">
+    <div className="bg-wheat min-h-screen overflow-x-hidden"> {/* Added overflow-x-hidden here */}
       {/* Navigation Bar */}
-      <nav className=" font-inconsolata font-semibold w-full h-[65px] relative flex justify-center p-0 m-0">
+      <nav className="font-inconsolata font-semibold w-full h-[65px] relative flex justify-center p-0 m-0">
         <ul className="flex flex-wrap bg-[#7B1F1F] w-full h-[65px] justify-end items-center list-none gap-4 px-4">
           <a href="/" className="absolute left-4">
             <img
@@ -20,7 +18,7 @@ const Hero = () => {
               alt="Logo"
             />
           </a>
-          <a href="/home" className=" hover:text-gray-400  text-white text-sm sm:text-lg">HOME</a>
+          <a href="/home" className=" hover:text-gray-400 text-white text-sm sm:text-lg">HOME</a>
           <a href="/about" className=" hover:text-gray-400 text-white text-sm sm:text-lg">ABOUT</a>
           <a href="/menu" className=" hover:text-gray-400 text-white text-sm sm:text-lg">MENU</a>
         </ul>
@@ -35,16 +33,16 @@ const Hero = () => {
           className="rounded-lg bg-blue-600 w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] object-cover"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col sm:flex-row gap-4 sm:gap-5 z-20">
-            <a href="https://www.opentable.com/r/cache-42-downtown-express-memphis">
-                <button className=" font-inconsolata font-semibold  bg-[#7B1F1F] text-white px-6 py-2 rounded-lg shadow-md hover:bg-[#a35a0d] transition">
-                  BOOK TABLE
-                </button>
-              </a> 
-              <a href="https://order.spoton.com/svy-cache-42-downtown-21327/memphis-tn/6716cc9b8a1487d11dc6f2b2/dinein?tableId=">
-                <button className=" font-inconsolata font-semibold  bg-[#7B1F1F] text-white px-6 py-2 rounded-lg shadow-md hover:bg-[#a35a0d] transition">
-                  ORDER NOW
-                </button>
-              </a>
+          <a href="https://www.opentable.com/r/cache-42-downtown-express-memphis">
+            <button className="w-full sm:w-auto font-inconsolata font-semibold bg-[#7B1F1F] text-white px-6 py-2 rounded-lg border-2 border-red-500 shadow-md transition relative overflow-hidden before:absolute before:inset-0 before:bg-red-500/20 before:opacity-0 hover:before:opacity-100 hover:shadow-[0_0_20px_#ff0000] hover:border-[#ff0000] duration-300">
+              BOOK TABLE
+            </button>
+          </a>
+          <a href="https://order.spoton.com/svy-cache-42-downtown-21327/memphis-tn/6716cc9b8a1487d11dc6f2b2/dinein?tableId=">
+            <button className="w-full sm:w-auto font-inconsolata font-semibold bg-[#7B1F1F] text-white px-6 py-2 rounded-lg border-2 border-red-500 shadow-md transition relative overflow-hidden before:absolute before:inset-0 before:bg-red-500/20 before:opacity-0 hover:before:opacity-100 hover:shadow-[0_0_20px_#ff0000] hover:border-[#ff0000] duration-300">
+              ORDER NOW  
+            </button>
+          </a>
         </div>
       </section>
 
