@@ -102,7 +102,7 @@ export default function Menu() {
           </div>
 
           {/* Lunch Section */}
-          <div className=" bg-[#F5F5DC] w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
+          <div className=" bg-[#F5F5DC] w-full lg:w-1/2 rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               LUNCH
             </h2>  
@@ -233,7 +233,7 @@ export default function Menu() {
           </div>
 
           {/* Salads Section */}
-          <div className="  bg-[#F5F5DC] w-full lg:w-1/2 bg-white rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
+          <div className="  bg-[#F5F5DC] w-full lg:w-1/2 rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
               Salads
             </h2>
