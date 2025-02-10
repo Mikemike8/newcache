@@ -377,7 +377,7 @@ export default function Menu() {
 
           {/* Sides Section */}
           <div className="w-full lg:w-1/2 bg-[#F5F5DC] rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
-            <h2 className="inline-block text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata border-b-2 border-transparent hover:border-b-sky-500 transition duration-300">
+            <h2 className="inline-block border-b-red-800 text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata border-b-2 border-transparent hover:border-b-sky-500 transition duration-300">
               SIDES
             </h2>
             <div className="mb-4">
