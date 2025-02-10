@@ -55,9 +55,10 @@ export default function Menu() {
         {/* Brunch Section */}
         <div className=" bg-[#F5F5DC] flex flex-col lg:flex-row justify-center py-10">
           <div className="w-full lg:w-1/2 bg-[#F5F5DC] rounded-lg p-4 md:p-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
-              BRUNCH
-            </h2>
+          <h2 className="inline-block border-b-red-800  text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata border-b-2 border-transparent hover:border-b-sky-500 transition duration-300">
+  BRUNCH
+</h2>
+
             <div className="mb-4">
               <h3 className="text-lg md:text-xl font-semibold font-inconsolata">
                 CHICKEN & WAFFLES - $18
@@ -103,7 +104,7 @@ export default function Menu() {
 
           {/* Lunch Section */}
           <div className=" bg-[#F5F5DC] w-full lg:w-1/2 rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
+            <h2 className="inline-block border-b-red-800  text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata border-b-2 border-transparent hover:border-b-sky-500 transition duration-300">
               LUNCH
             </h2>  
             <p className="text-sm text-gray-600 font-inconsolata">
@@ -155,7 +156,7 @@ export default function Menu() {
         {/* Small Plates Section */}
         <div className=" bg-[#F5F5DC] flex flex-col lg:flex-row justify-center py-10">
           <div className="w-full lg:w-1/2 bg-[#F5F5DC] rounded-lg p-4 md:p-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
+            <h2 className="inline-block border-b-red-800  text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata border-b-2 border-transparent hover:border-b-sky-500 transition duration-300">
               SMALL PLATES
             </h2>
             <div className="mb-4">
@@ -234,7 +235,7 @@ export default function Menu() {
 
           {/* Salads Section */}
           <div className="  bg-[#F5F5DC] w-full lg:w-1/2 rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
+            <h2 className="inline-block  border-b-red-800 text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata border-b-2 border-transparent hover:border-b-sky-500 transition duration-300">
               Salads
             </h2>
             <div className="mb-4">
@@ -267,7 +268,7 @@ export default function Menu() {
         {/* Main Plates Section */}
         <div className="flex  bg-[#F5F5DC] flex-col lg:flex-row justify-center py-10">
           <div className="w-full lg:w-1/2 bg-[#F5F5DC] rounded-lg p-4 md:p-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
+            <h2 className="inline-block border-b-red-800 text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata border-b-2 border-transparent hover:border-b-sky-500 transition duration-300">
               MAIN PLATES
             </h2>
             <div className="mb-4">
@@ -325,7 +326,7 @@ export default function Menu() {
               </p>
             </div>
             <div className="mb-4">
-           <h3 className="text-lg md:text-xl text-center font-semibold font-inconsolata">
+           <h3 className="inline-block text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata border-b-2 border-b-red-800  hover:border-b-sky-500 transition duration-300">
   CACHE FLIGHT - $35
 </h3>
 
@@ -376,7 +377,7 @@ export default function Menu() {
 
           {/* Sides Section */}
           <div className="w-full lg:w-1/2 bg-[#F5F5DC] rounded-lg p-4 md:p-8 mt-8 lg:mt-0">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata">
+            <h2 className="inline-block text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-inconsolata border-b-2 border-transparent hover:border-b-sky-500 transition duration-300">
               SIDES
             </h2>
             <div className="mb-4">
